@@ -1,3 +1,9 @@
+// pages/index.js or pages/index.tsx
+import React from 'react';
+
+export default function Home() {
+  return <div>Welcome to the homepage!</div>;
+  
 export async function getServerSideProps(context) {
   const { query } = context;
   const userInput = query.cmd || "";
